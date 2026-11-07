@@ -15,9 +15,7 @@
 
     function updateButton() {
       var dark = document.documentElement.dataset.theme === 'dark';
-      var label = document.documentElement.lang === 'ru'
-        ? (dark ? 'Включить светлую тему' : 'Включить тёмную тему')
-        : (dark ? 'Switch to light theme' : 'Switch to dark theme');
+      var label = dark ? 'Switch to light theme' : 'Switch to dark theme';
       button.textContent = dark ? '☀' : '☾';
       button.setAttribute('aria-label', label);
       button.title = label;
@@ -31,7 +29,6 @@
       } catch (error) {}
       updateButton();
     });
-    document.addEventListener('languagechange', updateButton);
     updateButton();
   });
 })();
