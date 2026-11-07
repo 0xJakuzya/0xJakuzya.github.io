@@ -130,12 +130,13 @@ a, .project-meta, .theme-toggle {
   padding: 0;
   border: 0;
   background: transparent;
-  color: #777;
+  color: #1772d0;
   font: inherit;
+  font-size: 16px;
 }
 
 html[data-theme="dark"] .nav-placeholder {
-  color: #adb5c0;
+  color: #80baf3;
 }
 
 
