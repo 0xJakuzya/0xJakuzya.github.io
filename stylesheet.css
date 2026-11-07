@@ -181,3 +181,65 @@ html[data-theme="dark"] .project-meta {
   justify-content: center;
   text-align: center;
 }
+
+@media (max-width: 600px) {
+  .bio-table tr {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .bio-table td,
+  .projects-table td,
+  .experience-table td {
+    display: block;
+    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .bio-table td:first-child {
+    padding: 8px 16px !important;
+  }
+
+  .bio-table td:last-child {
+    width: min(60%, 220px) !important;
+    padding: 20px 0 0 !important;
+  }
+
+  .projects-table td:first-child {
+    padding: 16px 16px 0 !important;
+    text-align: center;
+  }
+
+  .projects-table td:last-child {
+    padding: 8px 16px 16px !important;
+  }
+
+  .projects-table video,
+  .projects-table img {
+    width: 100% !important;
+    max-width: 260px !important;
+    height: auto;
+  }
+
+  .experience-table td:first-child {
+    padding: 8px 16px !important;
+  }
+
+  .experience-table img {
+    width: 100px !important;
+    max-width: 100% !important;
+    height: auto;
+  }
+
+  .experience-table td:last-child {
+    padding: 8px 16px 20px !important;
+    overflow-wrap: anywhere;
+  }
+
+  .name {
+    padding-top: 0;
+    font-size: 28px;
+  }
+}
