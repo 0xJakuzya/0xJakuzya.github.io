@@ -126,6 +126,18 @@ a, .project-meta, .theme-toggle {
   line-height: 1;
 }
 
+.nav-placeholder {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #777;
+  font: inherit;
+}
+
+html[data-theme="dark"] .nav-placeholder {
+  color: #adb5c0;
+}
+
 
 
 .theme-toggle:focus-visible {
