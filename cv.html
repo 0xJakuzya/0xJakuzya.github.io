@@ -7,17 +7,19 @@
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="stylesheet.css">
     <script src="theme.js"></script>
+    <script src="language.js" defer></script>
 </head>
 <body>
     <nav class="site-nav" aria-label="Main navigation">
         <div class="site-nav-inner">
-            <a href="index.html">about</a>
-            <a href="blog.html">blog</a>
+            <a href="index.html" data-i18n="about">about</a>
+            <a href="blog.html" data-i18n="blog">blog</a>
+            <button class="language-toggle" type="button" aria-label="Switch to Russian">EN / RU</button>
             <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme">☾</button>
         </div>
     </nav>
     <main class="page-content">
-        <p>скоро будет</p>
+        <p data-i18n="soon">Coming soon</p>
     </main>
 </body>
 </html>
