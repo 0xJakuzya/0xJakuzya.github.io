@@ -10,10 +10,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="theme.js"></script>
 
 </head>
 
 <body>
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="site-nav-inner">
+            <a href="index.html" aria-current="page">about</a>
+            <a href="blog.html">blog</a>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme">☾</button>
+        </div>
+    </nav>
     <table
         style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
@@ -29,10 +37,12 @@
                                         Dmitry Kuzmin
                                     </p>
                                     <p>
-                                        I'm a fourth-year undergraduate student at <a
-                                            href="https://www.psuti.ru/en">PSUTI</a> and a research engineer at the <a
+                                        I'm a 4-year undergraduate student pursuing a B.Sc. in Information Systems
+                                        and Technologies at <a href="https://www.psuti.ru/en">PSUTI</a>, advised by
+                                        <a href="https://www.psuti.ru/ru/university/staff/n.i.limanova">Prof. Natalia I. Limanova</a>.
+                                        I'm also a Research Engineer at the <a
                                             href="https://samsmu.ru/departments/nii/neuroscience/">Research Institute of
-                                            Neuroscience</a>, where I work on
+                                            Neuroscience</a>, directed by Dr. Alexander V. Zakharov, where I work on
                                         computational methods and machine learning for analyzing neural and
                                         physiological signals. Most of my work involves
                                         extracting and analyzing features from biosignals to develop algorithms for
@@ -42,7 +52,8 @@
                                         <a href="mailto:jakuzyadd@gmail.com">Email</a> &nbsp;/&nbsp;
                                         <a href="https://www.linkedin.com/in/dmitry-kuzmin-667a9b423/">Linkedin</a>
                                         &nbsp;/&nbsp;
-                                        <a href="https://github.com/0xJakuzya">Github</a>
+                                        <a href="https://github.com/0xJakuzya">Github</a> &nbsp;/&nbsp;
+                                        <a href="cv.html">CV</a>
                                     </p>
                                 </td>
                                 <td style="padding:2.5%;width:37%;max-width:37%">
@@ -76,10 +87,8 @@
                                     <h2>Research Projects</h2>
                                     <p>
                                         My main research interests lie in Computer Vision, Deep Learning, and Machine Learning.
-                                        I'm particularly interested in the connection between artificial 
-                                        intelligence and computational neuroscience, especially how 
-                                        ideas from biological neural systems can help us develop new 
-                                        approaches to machine learning.
+                                        I'm interested in exploring new neural network methods and architectures for
+                                        computer vision and applying them to practical problems.
                                     </p>
                                 </td>
                             </tr>
@@ -111,7 +120,7 @@
                                     </a>
                                     <br>
                     
-                                    <span style="color:#777;">
+                                    <span class="project-meta">
                                         Machine Learning · Computer Vision · Signal Processing
                                     </span>
                                     <br>
@@ -134,7 +143,7 @@
                                 <td style="padding:8px;width:70%;vertical-align:middle;">
                                     <a href="https://github.com/0xJakuzya/solar-filament-segmentation"><span class="papertitle">Solar Filament Segmentation</span></a>
                                     <br>
-                                    <span style="color:#777;">Computer Vision · Image Segmentation · UNet</span>
+                                    <span class="project-meta">Computer Vision · Image Segmentation · UNet</span>
                                     <br>
                                     <a href="https://github.com/0xJakuzya/solar-filament-segmentation">Code</a>
                                     <p>
